@@ -17,8 +17,9 @@
     <form action="register.html">
 
         <h4>Please Enter your email and password</h4>
-        <input type="email" name="email" id="UserEmailReg" placeholder="email">
-        <input type="password" name="password" id="UserPasswordReg" placeholder="password">
+        <input type="email" name="email" id="UserEmailReg" placeholder="email" required>
+        <input type="password" name="password" id="UserPasswordReg" placeholder="password" required maxlength="20"
+            minlength="3">
         <button type="submit" formaction="main.html">register</button>
         <button type="reset">Reset</button>
     </form>
