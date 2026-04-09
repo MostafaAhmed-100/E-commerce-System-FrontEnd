@@ -13,26 +13,61 @@
      <title>Products</title>
 </head>
 <body>
-     <h2>E-commerce-System-FrontEnd</h2>
-     <div style=" font-size: large;">
-          <a href="login.html">Login</a>
-          <a href="register.html">register</a>
-          <a href="contact form.html">contact us</a>
-     </div>
-     <search>
-          <form>
-               <input type="search" id="search_for_product" placeholder="search for a product" spellcheck="true">
-               <button type="submit">search</button>
-          </form>
-     </search>
-     <div style="margin-left: 10px; font-size: large;">
-          <a href="categorys.html" style="display:inline-block;  font-size: large;">Our Categorys</a>
-          <a href="orders.html" style="display:inline-block;  font-size: large;">your orders</a>
-     </div>
-     <div><!--المفروض منتجات علي ما تفرج-->
-          <img src="" alt="" width="400px" height="400px">
-          <img src="" alt="" width="400px" height="400px">
-          <img src="" alt="" width="400px" height="400px">
-     </div>
+     <header >
+        <img src="../Photos/e-commerce-concept-logo.webp" alt="E-commerce Logo" style="width: 100px;float: left; height: 100px;">
+        <div >            
+            <h1>Welcome to Our E-commerce System</h1>
+            <p>Your one-stop shop for all your needs!</p>
+        </div> 
+        <div>
+            <a href="products.html" class="button-link">See Products</a>
+            <a href="contact form.html" class="button-link">Contact Us</a>
+            <a href="login.html" class="button-link">login</a>
+            <a href="register.html" class="button-link">register</a>
+            <a href="Home.html" class="button-link">Home</a>
+        </div>
+    </header>
+        <main class="content-section">
+        <h1 class="long_text">Our Premium Products</h1>
+        <p>Find the best deals on your favorite items!</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 40px; max-width: 1200px; margin: 0 auto;">
+            <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s;">
+                <img src="../Photos/wireless-headphones-on-orange-surface-productgraphy-photo.webp" alt="Product" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding: 20px; text-align: left;">
+                    <h3 class="short_text" style="margin: 0;">Wireless Headphones</h3>
+                    <p style="color: #27ae60; font-weight: bold; font-size: 1.2rem; margin: 10px 0;">$99.99</p>
+                    <p style="color: #7f8c8d; font-size: 0.9rem;">High-quality sound with noise cancellation.</p>
+                    <button class="button-link" style="width: 100%; border: none; margin-top: 10px;">Add to Cart</button>
+                </div>
+            </div>
+            <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+                <img src="../Photos/a-new-series-2-apple-smartwatch-sits-on-display-inside-the-apple-inc-covent-garden-store-in.webp" alt="Product" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding: 20px; text-align: left;">
+                    <h3 class="short_text" style="margin: 0;">Smart Watch Series 7</h3>
+                    <p style="color: #27ae60; font-weight: bold; font-size: 1.2rem; margin: 10px 0;">$299.00</p>
+                    <p style="color: #7f8c8d; font-size: 0.9rem;">Track your health and stay connected.</p>
+                    <button class="button-link" style="width: 100%; border: none; margin-top: 10px;">Add to Cart</button>
+                </div>
+            </div>
+            <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+                <img src="../Photos/gfP4BAS28pSp3vxunNKh5G.webp" alt="Product" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding: 20px; text-align: left;">
+                    <h3 class="short_text" style="margin: 0;">Gaming Mouse</h3>
+                    <p style="color: #27ae60; font-weight: bold; font-size: 1.2rem; margin: 10px 0;">$45.00</p>
+                    <p style="color: #7f8c8d; font-size: 0.9rem;">Ultra-fast response for pro gamers.</p>
+                    <button class="button-link" style="width: 100%; border: none; margin-top: 10px;">Add to Cart</button>
+                </div>
+            </div>
+            <div>
+                <a href="categories.html" class="button-link">See All Categories</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div style="color: #bdc3c7;">
+            <p>2026 - E-Commerce-System-front-end</p>
+             <P>Developed by Mostafa Ahmed Soudi</P>
+        </div>
+    </footer>
 </body>
 </html>

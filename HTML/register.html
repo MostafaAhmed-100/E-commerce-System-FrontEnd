@@ -1,43 +1,74 @@
-
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta name="description" content="This site was created for training to make an html site for E-commerce-System
-     if you want to clone the code see https://github.com/MostafaAhmed-100/E-commerce-System-FrontEnd.git for the frontend
-     and if you want to clone the BackEnd code go see https://github.com/MostafaAhmed-100/E-commerce-System-BackEnd.git
-     note it was in the master not the main">
-     <meta name="author" content="MostafaAhmed-100 githubName">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../Photos/e-commerce-concept-logo.webp">
-    <link rel="stylesheet" href="../H-CSS/style.css">
-     <title>Register</title>
-</head>
-<body align="center" style="font-size: larger; background-image: url(''); background-size: cover; color: white;">
-    <form action="main.html" method="post">
-        <h4>Please Enter your email and password</h4>
-        <div style="margin-bottom: 10px; padding-left: 25px;">
-            <label  for="email">Email</label>
-            <input type="email" name="email" required>
-        </div>
-        <div style="margin-bottom: 10px;">
-            <label  for="password">password</label>
-            <input type="password" name="password" required>
-            <br>
-            <label for="confirm password">confirm password</label>
-            <input type="password" name="confirm password" id="">
-        </div>
-        <div>
-            <p>Gender:</p>
-            
-            <input type="radio" name="gender" id="maleChoice" value="male" required>
-            <label for="maleChoice">Male</label>
+    <head>
+        <meta name="description" content="This site was created for training to make an html site for E-commerce-System
+        if you want to clone the code see https://github.com/MostafaAhmed-100/E-commerce-System-FrontEnd.git for the frontend
+        and if you want to clone the BackEnd code go see https://github.com/MostafaAhmed-100/E-commerce-System-BackEnd.git
+        note it was in the master not the main">
+        <meta name="author" content="MostafaAhmed-100 githubName">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../Photos/e-commerce-concept-logo.webp">
+        <link rel="stylesheet" href="../H-CSS/style.css">
+        <title>Register</title>
+    </head>
+    <body>
+        <header>
+            <img src="../Photos/e-commerce-concept-logo.webp" alt="E-commerce Logo" style="width: 100px; float: left; height: 100px;">
+            <div>
+                <h1>Welcome to Our E-commerce System</h1>
+                <p>Your one-stop shop for all your needs!</p>
+            </div>
+            <div style="margin-top: 15px;">
+                <a href="products.html" class="button-link">See Products</a>
+                <a href="contact form.html" class="button-link">Contact Us</a>
+                <a href="login.html" class="button-link">Login</a>
+                <a href="register.html" class="button-link">Register</a>
+                <a href="Home.html" class="button-link">Home</a>
+            </div>
+        </header>
+        <main style="flex: 1; display: flex; justify-content: center; align-items: center; background-color: #ecf0f1; padding: 40px 0;">
+            <form action="main.html" method="post" id="RegisterForm">
+                <h1 class="long_text">Please Enter your information</h1>
+                <div style="width: 100%;">
+                    <label for="Registername" class="short_text">Name</label>
+                    <input type="text" name="name" id="Registername" required>
+                </div>
+                <div style="width: 100%;">
+                    <label for="Registeremail" class="short_text">Email</label>
+                    <input type="email" name="email" id="Registeremail" required>
+                </div>
+                <div style="width: 100%;">
+                    <label for="Registerpassword" class="short_text">Password</label>
+                    <input type="password" name="password" id="Registerpassword" required>
+                </div>
+                <div style="width: 100%;">
+                    <label for="RegisterconfirmPassword" class="short_text">Confirm Password</label>
+                    <input type="password" name="confirm password" id="RegisterconfirmPassword" required>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <p class="short_text">Gender:</p>
+                    <div style="display: flex; gap: 20px; align-items: center;">
+                        <input type="radio" name="gender" id="maleChoice" value="male" required>
+                        <label for="maleChoice" class="short_text" style="color: blue; cursor: pointer;">Male</label>
+                        
+                        <input type="radio" name="gender" id="femaleChoice" value="female">
+                        <label for="femaleChoice" class="short_text" style="color: pink; cursor: pointer;">Female</label>
+                    </div>
+                </div>
 
-            <input type="radio" name="gender" id="femaleChoice" value="female">
-            <label for="femaleChoice">Female</label>
-        </div>
+                <div style="display: flex; gap: 10px; width: 100%;">
+                    <button type="submit" class="button-link" style="border: none;">Register</button>
+                    <a href="login.html" class="button-link" style="background-color: #34495e;">Login</a>
+                </div>
+            </form>
+        </main>
 
-        <button href="products.html" style="width: 160px;" type="submit">login</button>
-        <button style="width: 160px;"type="reset">Reset</button>        
-    </form>
-</body>
+        <footer>
+            <div style="color: #bdc3c7; padding: 15px;">
+                <p>2026 - E-Commerce-System-front-end</p>
+                <p>Developed by Mostafa Ahmed Soudi</p>
+            </div>
+        </footer>
+        <script src="../H-JavaS/Validation.js"></script>
+    </body>
 </html>

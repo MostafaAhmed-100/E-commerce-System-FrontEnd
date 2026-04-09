@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="description" content="This site was created for training to make an html site for E-commerce-System
-     if you want to clone the code see https://github.com/MostafaAhmed-100/E-commerce-System-FrontEnd.git for the frontend
-     and if you want to clone the BackEnd code go see https://github.com/MostafaAhmed-100/E-commerce-System-BackEnd.git
-     note it was in the master not the main">
-     <meta name="author" content="MostafaAhmed-100 githubName">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="">
-    <title>contact form</title>
-</head>
-<body style=" font-size: larger;  background-size: cover; color: rgb(255, 255, 255);">
-    <h1 style = "text-align: right;">Contact Us</h1>
-    <h3 style = "">If you have any questions about our services or need assistance with your account,</h3>
-    <h3>please fill out the form below. Our team typically responds within 24 hours.</h3>
-    <div style=" font-size: larger; ">
-        <div>
-            <h2>Get in Touch</h2>
-            <p style=" font-size: larger;">Have a question? We are here to help!</p>
-        </div>
-        <div>
-            <h4>Please Enter your details</h4> 
-        </div>
-        <div>
-            <label for="Fname">First Name:</label>
-            <input type="text" id="Fname" name="Fname">
-            <label for="Lname">Last Name:</label>
-            <input type="text" id="Lname" name="Lname">
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-        </div>
-        <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-        </div>
-    </div>
-</body>
+    <head>
+        <meta name="description" content="This site was created for training to make an html site for E-commerce-System
+        if you want to clone the code see https://github.com/MostafaAhmed-100/E-commerce-System-FrontEnd.git for the frontend
+        and if you want to clone the BackEnd code go see https://github.com/MostafaAhmed-100/E-commerce-System-BackEnd.git
+        note it was in the master not the main">
+        <meta name="author" content="MostafaAhmed-100 githubName">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../Photos/e-commerce-concept-logo.webp">
+        <link rel="stylesheet" href="../H-CSS/style.css">
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <header>
+            <img src="../Photos/e-commerce-concept-logo.webp" alt="E-commerce Logo" style="width: 100px; float: left; height: 100px;">
+            <div>
+                <h1>Welcome to Our E-commerce System</h1>
+                <p>Your one-stop shop for all your needs!</p>
+            </div>
+            <div style="margin-top: 15px;">
+                <a href="products.html" class="button-link">See Products</a>
+                <a href="contact form.html" class="button-link">Contact Us</a>
+                <a href="login.html" class="button-link">Login</a>
+                <a href="register.html" class="button-link">Register</a>
+                <a href="Home.html" class="button-link">Home</a>
+            </div>
+        </header>
+        <main style="flex: 1; display: flex; justify-content: center; align-items: center; background-color: #ecf0f1; padding: 40px 0;">
+            <form action="main.html" method="post" id="ContactForm">
+                <h1 class="long_text">Contact Us</h1>
+                <div style="width: 100%;">
+                    <label for="Contactname" class="short_text">Name</label>
+                    <input type="text" name="name" id="Contactname" required>
+                </div>
+                <div style="width: 100%;">
+                    <label for="Contactemail" class="short_text">Email</label>
+                    <input type="email" name="email" id="Contactemail" required>
+                </div>
+                <div style="width: 100%;">
+                    <label for="Contactmessage" class="textarea">Message</label>
+                    <textarea name="message" id="Contactmessage" rows="5" required></textarea>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button type="submit" class="button-link">Send Message</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div style="color: #bdc3c7; padding: 15px;">
+                <p>2026 - E-Commerce-System-front-end</p>
+                <p>Developed by Mostafa Ahmed Soudi</p>
+            </div>
+        </footer>
+        <script src="../H-JavaS/Validation.js"></script>
+    </body>
 </html>
